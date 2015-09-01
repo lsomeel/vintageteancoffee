@@ -9,10 +9,47 @@
   overflow: auto;
 }
 html, body {
-	/*background-color: #000000;*/
 	background-color:#ffffff;
 	height: 100%;
-	font-size: 11px
+	font-size: 12px
+}
+.nav-item {
+	color: #383838;
+	text-align: center;
+	padding-bottom:0; margin-bottom:0;
+}
+.nav-shop, .nav-shop:active, .nav-shop:visited {
+	color: #383838;
+}
+.nav-about:hover,  .nav-location:hover, .nav-shop:hover, .nav-press:hover {
+	color: #006600;
+	text-decoration: none;
+}
+.nav-about, .nav-about:active, .nav-about:visited {
+	color: #383838;
+}
+/*dropdown menu*/
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+.dropdown .dropdown-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin: 0;
+
+	list-style: none;
+	width: 100%;
+	padding: 0;
+
+	font-size: 11px;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+.dropdown:hover .nav-about-tea:hover,  .dropdown:hover .nav-about-coffee:hover, .dropdown:hover .nav-location-cleveland:hover {
+	color: #006600;
 }
 .text-box {
 	text-align: center;
@@ -21,6 +58,7 @@ html, body {
 .social {
 	margin: 0;
 	padding: 0;
+	text-align: center;
 }
 .social ul {
 	margin: 0;
@@ -32,13 +70,16 @@ html, body {
 	display: inline-block;
 }
 .social i {
-	color: #505050;
+	color: #383838;
 	background-color: #ffffff;
 }
+.social i:hover {
+	color: #006600;
+}
 .vintage-logo {
-	max-width: 30%;
-	margin-top: 8%;
-	margin-bottom: 4%;
+	max-width: 40%;
+	margin-top: 10%;
+	margin-bottom: 10%;
 }
 .container {
 	width: 100%;
@@ -46,18 +87,23 @@ html, body {
 .address, .address:hover, .address:active, .address:visited {
 	color: #505050;
 }
-.online-store, .online-store:hover, .online-store:active, .online-store:visited {
-	color: #505050;
-	border-left: solid #505050;
-	border-right: solid #505050;
-	border-width: thin;
-	padding-left: 3%;
-	padding-right: 3%;
+.nav-col-about {
+	text-align: center;
+	padding-top: 3%;
+	padding-bottom: 5%;
 }
-.online-store-box {
-	margin-top: 0.5%;
-	margin-bottom: 2.5%;
+.nav-col-shop {
+	text-align: center;
+	padding-bottom: 10%;
 }
+.nav-col-location {
+	text-align: center;
+	padding-bottom: 5%;
+}
+.nav-col-press {
+	text-align: center;
+	padding-bottom: 10%;
+}/*
 .day-box {
 	padding-left: 30%;
 	padding-right: 3%;
@@ -71,7 +117,7 @@ html, body {
 }
 .days, .hours {
 	color: #505050;
-}
+}*/
 /*
 .contactUs {
 	text-align: right;
@@ -88,88 +134,18 @@ html, body {
 	color: #BCBBBB;
 }*/
 @media screen and (max-width: 414px) {
-	.social ul {
-		margin-left: 35.5%;
-		margin-right: 20%;
+	.blank-col-1 {
+		margin-left: 0;
+		padding-left: 0;
 	}
 }
 @media screen and (min-width: 415px) and (max-width: 449px) {
-	.social ul {
-		margin-left: 36%;
-		margin-right: 20%;
-	}
 }
-@media screen and (min-width: 450px) and (max-width: 499px) {
-	.social ul {
-		margin-left: 38%;
-		margin-right: 20%;
-	}
-}
-@media screen and (min-width: 500px) and (max-width: 599px) {
-	body {
-		font-size: 11.5px;
-	}
-	.social ul {
-		margin-left: 40.5%;
-		margin-right: 20%;
-	}
-}
-@media screen and (min-width: 600px) and (max-width: 613px) {
-	body {
-		font-size: 12px;
-	}
-	.social ul {
-		margin-left: 41%;
-		margin-right: 20%;
-	}
-}
-@media screen and (min-width: 614px) and (max-width: 630px) {
-	body {
-		font-size: 12px;
-	}
-	.social ul {
-		margin-left: 41.5%;
-		margin-right: 20%;
-	}
-}
-@media screen and (min-width: 631px) and (max-width: 690px) {
-	body {
-		font-size: 12px;
-	}
-	.social ul {
-		margin-left: 42%;
-		margin-right: 20%;
-	}
-}
-@media screen and (min-width: 691px) and (max-width: 699px) {
-	body {
-		font-size: 12px;
-	}
-	.social ul {
-		margin-left: 42%;
-		margin-right: 20%;
-	}
-}
-@media screen and (min-width: 700px) and (max-width: 799px) {
-	body {
-		font-size: 13px;
-	}
-	.social ul {
-		margin-left: 42.5%;
-		margin-right: 20%;
-	}
-}
-@media screen and (min-width: 800px) {
-	.container {
-		width: 800px;
+@media screen and (min-width: 430px) {
+		.container {
+		width: 430px;
 		margin-left: auto;
 		margin-right: auto;
 	}
-	body {
-		font-size: 13.5px;
-	}
-	.social ul {
-		margin-left: 42.5%;
-		margin-right: 20%;
-	}
+
 }
